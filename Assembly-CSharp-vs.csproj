@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{87AFD010-9EE5-10B7-2319-9CF1BCC13461}</ProjectGuid>
+	<ProjectGuid>{40F9C0D9-C047-79E9-E6DA-60CFB0293565}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,11 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Demo\Scripts\UnitySynthTest.cs" />
      <Compile Include="Assets\ListBox\ListBox.cs" />
-     <Compile Include="Assets\Scripts\UnitySynthTest.cs" />
-     <Compile Include="Assets\_Scripts\Colisiones.cs" />
+     <Compile Include="Assets\_Scripts\Cleaner.cs" />
      <Compile Include="Assets\_Scripts\Move.cs" />
-     <Compile Include="Assets\_Scripts\PlayerControl.cs" />
      <Compile Include="Assets\_Scripts\notesManager.cs" />
      <None Include="Assets\Resources\Midis\carnival.mid.txt" />
      <None Include="Assets\Resources\GM Bank\FrenchHorns.sfz.txt" />
@@ -221,7 +220,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{17DA6CAF-BF9E-C4FB-28B2-963BC074D189}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+      <Project>{0C708378-0ACA-6A97-7F6F-CE5695F49685}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

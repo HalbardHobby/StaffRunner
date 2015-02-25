@@ -10,7 +10,6 @@ public class Move : MonoBehaviour {
 	void Start () {
 		Rigidbody r = target.GetComponent<Rigidbody>();
 		r.velocity = new Vector3 (-5, 0, 0);
-		Destroy (target, 15f);
 	}
 	
 	// Update is called once per frame

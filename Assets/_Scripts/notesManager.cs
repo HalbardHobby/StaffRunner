@@ -9,17 +9,18 @@ public class notesManager : MonoBehaviour {
 	private Transform[] spawnPoints;         // An array of the spawn points this enemy can spawn from.
 	
 	
-	void Start ()
-	{
-
+	void Start (){
+		spawnPoints = GetComponentsInChildren<Transform> ();
 
 		// Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.
 		InvokeRepeating ("Spawn", spawnTime, spawnTime);
 	}
+
+	void Update(){
+		//TODO construir logica de generacion
+	}
 	
-	
-	void Spawn ()
-	{
+	void Spawn (){
 		// If the player has no health left...
 		/*if(playerHealth.currentHealth <= 0f)
 		{
