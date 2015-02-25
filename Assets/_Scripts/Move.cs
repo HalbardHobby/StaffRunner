@@ -3,13 +3,10 @@ using System.Collections;
 
 public class Move : MonoBehaviour {
 
-
-	public GameObject target;
-
 	// Use this for initialization
 	void Start () {
-		Rigidbody r = target.GetComponent<Rigidbody>();
-		r.velocity = new Vector3 (-5, 0, 0);
+		Rigidbody2D r = GetComponent<Rigidbody2D>();
+		r.velocity = new Vector2 (-5, 0);
 	}
 	
 	// Update is called once per frame
