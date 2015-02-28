@@ -8,9 +8,4 @@ public class Move : MonoBehaviour {
 		Rigidbody2D r = GetComponent<Rigidbody2D>();
 		r.velocity = new Vector2 (-5, 0);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

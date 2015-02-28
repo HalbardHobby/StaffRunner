@@ -1,14 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class NotesManager : MonoBehaviour {
-
-	//public PlayerHealth playerHealth;       // Reference to the player's heatlh.
+	
 	public GameObject[] targets;                // The enemy prefab to be spawned.
-	public float spawnTime = 2f;            // How long between each spawn.
+	public float spawnTime = 2f;             // How long between each spawn.
+
+	public HealthManager salud;				//Vida del jugador
+	public Text Chord;						//Acorde que se esta generando actualmente
+	public Text Scale;						//Escala que se esta utilizando para generar acordes.
+
 	private Transform[] spawnPoints;         // An array of the spawn points this enemy can spawn from.
-	
-	
+		
 	void Start (){
 		spawnPoints = GetComponentsInChildren<Transform> ();
 

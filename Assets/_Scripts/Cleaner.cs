@@ -10,11 +10,6 @@ public class Cleaner : MonoBehaviour {
 	void Awake() {
 		collide = GetComponent<BoxCollider2D> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (collide.gameObject.CompareTag ("Good")) {

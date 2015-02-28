@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+	public Slider salud;
 	
+	public void Damage(){
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public void Recover(){
+
 	}
 }

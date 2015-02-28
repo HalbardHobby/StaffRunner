@@ -10,7 +10,7 @@ namespace CSharpSynth.Sequencer
     public class MidiSequencer
     {
         //--Variables
-        private MidiFile _MidiFile;
+		private MidiFile _MidiFile;
         private StreamSynthesizer synth;
         private int[] currentPrograms;
         private List<byte> blockList;
