@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class notesManager : MonoBehaviour {
+public class NotesManager : MonoBehaviour {
 
 	//public PlayerHealth playerHealth;       // Reference to the player's heatlh.
 	public GameObject[] targets;                // The enemy prefab to be spawned.

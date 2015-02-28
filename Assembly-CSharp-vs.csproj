@@ -49,8 +49,12 @@
      <Compile Include="Assets\Demo\Scripts\UnitySynthTest.cs" />
      <Compile Include="Assets\ListBox\ListBox.cs" />
      <Compile Include="Assets\_Scripts\Cleaner.cs" />
+     <Compile Include="Assets\_Scripts\HealthManager.cs" />
      <Compile Include="Assets\_Scripts\Move.cs" />
-     <Compile Include="Assets\_Scripts\notesManager.cs" />
+     <Compile Include="Assets\_Scripts\NotesManager.cs" />
+     <Compile Include="Assets\_Scripts\ScoreManager.cs" />
+     <Compile Include="Assets\_Scripts\TouchManager.cs" />
+     <Compile Include="Assets\_Scripts\Touchable.cs" />
      <None Include="Assets\Resources\Midis\carnival.mid.txt" />
      <None Include="Assets\Resources\GM Bank\FrenchHorns.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Marimba.sfz.txt" />
