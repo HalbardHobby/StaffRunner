@@ -7,6 +7,8 @@ Project("{10592D3D-C72E-040A-6F3E-3548EE9D76CD}") = "StaffRunner", "Assembly-CSh
 EndProject
 Project("{10592D3D-C72E-040A-6F3E-3548EE9D76CD}") = "StaffRunner", "Assembly-CSharp-Editor.csproj", "{2C8E5B87-D6FF-4DD5-EF82-2264B51FCB47}"
 EndProject
+Project("{10592D3D-C72E-040A-6F3E-3548EE9D76CD}") = "StaffRunner", "Assembly-UnityScript-firstpass.unityproj", "{A948E5C8-45C7-009B-C23C-5D9B25829E7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +27,15 @@ Global
 		{2C8E5B87-D6FF-4DD5-EF82-2264B51FCB47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C8E5B87-D6FF-4DD5-EF82-2264B51FCB47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C8E5B87-D6FF-4DD5-EF82-2264B51FCB47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A948E5C8-45C7-009B-C23C-5D9B25829E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A948E5C8-45C7-009B-C23C-5D9B25829E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A948E5C8-45C7-009B-C23C-5D9B25829E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A948E5C8-45C7-009B-C23C-5D9B25829E7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																								GlobalSection(MonoDevelopProperties) = preSolution
+																																										GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

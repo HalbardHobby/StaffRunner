@@ -46,6 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\AnimatorUtil.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\CubeLabel.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\CubeSurface.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\EastState.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\NorthState.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\SouthState.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\VerticalMovement.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\WestState.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Scripts\AnimatorStateMachineUtil.cs" />
      <Compile Include="Assets\Demo\Scripts\UnitySynthTest.cs" />
      <Compile Include="Assets\ListBox\ListBox.cs" />
      <Compile Include="Assets\_Scripts\Cleaner.cs" />
@@ -218,6 +227,9 @@
      <None Include="Assets\Resources\GM Bank\Power.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Shanai.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\SweepPad.sfz.txt" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>C:/Users/Alejandro/Documents/Game Making/Unity/StaffRunner/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -46,6 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\AnimatorUtil.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\CubeLabel.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\CubeSurface.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\EastState.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\NorthState.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\SouthState.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\VerticalMovement.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\WestState.cs" />
+     <Compile Include="Assets\AnimatorStateMachineUtil\Scripts\AnimatorStateMachineUtil.cs" />
      <Compile Include="Assets\Demo\Scripts\UnitySynthTest.cs" />
      <Compile Include="Assets\ListBox\ListBox.cs" />
      <Compile Include="Assets\_Scripts\Cleaner.cs" />
@@ -225,6 +234,8 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{0C708378-0ACA-6A97-7F6F-CE5695F49685}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{A948E5C8-45C7-009B-C23C-5D9B25829E7F}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
