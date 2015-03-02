@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class TouchManager : MonoBehaviour {
@@ -22,9 +22,12 @@ public class TouchManager : MonoBehaviour {
 		Vector3 objetivo = Camera.main.ScreenToWorldPoint (toque.position);
 		RaycastHit2D hit = Physics2D.Raycast (objetivo, objetivo);
 
-		if(hit.collider != null)
+		if (hit.collider != null) {
 			//TODO comportamiento de audio
-			//TODO comportamiento de puntaje y salud
+
+
+
 			Destroy (hit.collider.gameObject);
+		}
 	}
 }
