@@ -1,13 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\TouchManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\NotesManager.cs">
     <Files>
-      <File FileName="Assets\_Scripts\TouchManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\Cleaner.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\Move.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\Touchable.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\HealthManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\ScoreManager.cs" Line="9" Column="2" />
+      <File FileName="Assets\_Scripts\TouchManager.cs" Line="28" Column="1" />
+      <File FileName="Assets\_Scripts\NotesManager.cs" Line="50" Column="3" />
+      <File FileName="Assets\_Scripts\ChordNames.cs" Line="41" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -46,17 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\AnimatorUtil.cs" />
-     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\CubeLabel.cs" />
-     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\CubeSurface.cs" />
-     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\EastState.cs" />
-     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\NorthState.cs" />
-     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\SouthState.cs" />
-     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\VerticalMovement.cs" />
-     <Compile Include="Assets\AnimatorStateMachineUtil\Examples\Scripts\WestState.cs" />
-     <Compile Include="Assets\AnimatorStateMachineUtil\Scripts\AnimatorStateMachineUtil.cs" />
      <Compile Include="Assets\Demo\Scripts\UnitySynthTest.cs" />
      <Compile Include="Assets\ListBox\ListBox.cs" />
+     <Compile Include="Assets\_Scripts\ChordNames.cs" />
      <Compile Include="Assets\_Scripts\Cleaner.cs" />
      <Compile Include="Assets\_Scripts\HealthManager.cs" />
      <Compile Include="Assets\_Scripts\Move.cs" />
