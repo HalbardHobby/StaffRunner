@@ -24,10 +24,14 @@ public class TouchManager : MonoBehaviour {
 
 		if (hit.collider != null) {
 			//TODO comportamiento de audio
+			GameObject obj = hit.collider.gameObject;
+			if(obj.tag.Equals("Good"))
+				puntaje.IncreaseScore();
+			else if(obj.tag.Equals("Bad"))
+				puntaje.LoseStreak();
 
 
-
-			Destroy (hit.collider.gameObject);
+			Destroy (obj);
 		}
 	}
 }

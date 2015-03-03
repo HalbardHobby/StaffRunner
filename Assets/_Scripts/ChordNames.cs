@@ -43,4 +43,9 @@ public static class ChordNames {
 	//definicion de semitonos de una escala
 	public static int[] Mayor = new int[8]{0,2,4,5,7,9,11,12};
 	public static int[] Minor = new int[8]{0,2,3,5,7,8,10,12};
+
+	//definicion de acordes presentes en cada escala
+	public static string[] MayorScale = new string[7]{I,ii,iii,IV,V,vi,viiDim};
+	public static string[] MinorScale = new string[8]{i,iiDim,III,iv,V,VI,VII,viiDim};
+
 }
