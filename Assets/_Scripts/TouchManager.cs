@@ -1,14 +1,33 @@
 using UnityEngine;
 using System.Collections;
+using CSharpSynth.Effects;
+using CSharpSynth.Sequencer;
+using CSharpSynth.Synthesis;
+using CSharpSynth.Midi;
 
+[RequireComponent (typeof(AudioSource))]
 public class TouchManager : MonoBehaviour {
 
 	private HealthManager salud;
 	private ScoreManager puntaje;
 
+	private StreamSynthesizer midiStreamSynthesizer;// Permite sintetizar el MIDI.
+	private float[] sampleBuffer;
+	private float gain = 1f;
+	public string bankFilePath = "GM Bank/gm";
+	public int bufferSize = 1024;
+
 	void Start(){
 		salud = GetComponent<HealthManager>();
 		puntaje = GetComponent<ScoreManager>();
+		InicilizarSintetizador ();
+	}
+
+	void InicilizarSintetizador(){
+		midiStreamSynthesizer = new StreamSynthesizer (44100, 2, bufferSize, 40);
+		sampleBuffer = new float[midiStreamSynthesizer.BufferSize];		
+		
+		midiStreamSynthesizer.LoadBank (bankFilePath);
 	}
 
 	// Update is called once per frame
@@ -30,8 +49,36 @@ public class TouchManager : MonoBehaviour {
 			else if(obj.tag.Equals("Bad"))
 				puntaje.LoseStreak();
 
+			Note nota = obj.GetComponent<Note>();
+
+			int note = 65;//nota.note;
+			int vol = 200;//nota.volume;
+			int inst = 10;//nota.instrument;
+			float duration = 1;//nota.duration;
+
+			StartCoroutine(PlayNote(note, vol, inst, duration));
 
 			Destroy (obj);
 		}
 	}
+
+	IEnumerator PlayNote(int note, int vol, int inst, float duration){
+		midiStreamSynthesizer.NoteOn (1, note, vol, inst);
+		yield return new WaitForSeconds (duration);
+		midiStreamSynthesizer.NoteOff (1, note);
+	}
+
+	// Metodo necesario para salida de audio.
+	// NO RETIRAR!!!
+	private void OnAudioFilterRead (float[] data, int channels)
+	{
+		
+		//This uses the Unity specific float method we added to get the buffer
+		midiStreamSynthesizer.GetNext (sampleBuffer);
+		
+		for (int i = 0; i < data.Length; i++) {
+			data [i] = sampleBuffer [i] * gain;
+		}
+	}
+
 }
