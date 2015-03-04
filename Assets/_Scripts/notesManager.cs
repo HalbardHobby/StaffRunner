@@ -10,7 +10,7 @@ public class NotesManager : MonoBehaviour {
 	public GameObject good;							// Prefab correspondiente a una nota correcta.
 	public GameObject bad;							// Prefab correspondiente a una mala nota.
 
-	public float spawnTime = 1f;            		// How long between each spawn.
+	public float spawnTime = 0.5f;            		// How long between each spawn.
 	public float chordTime = 5f;					// Cada cuanto se cambia de acorde.
 	public float badNoteProb = 0.20f;				// La probabilidad de una nota fuera del acorde.
 	public float upperNoteProb = 0.30f;				// La probabilidad de una nota en la siguiente octava.
@@ -94,10 +94,8 @@ public class NotesManager : MonoBehaviour {
 		Note nota = note.GetComponent<Note> ();
 
 		nota.duration = spawnTime;
-		nota.note += ChordNames.Mayor [line % ChordNames.Mayor.Length];
+		nota.note = nota.note + ChordNames.Mayor [line % ChordNames.Mayor.Length];
 		if (prob < upperNoteProb) 
-			nota.note+=12;
-
-
+			nota.note = nota.note + 12;
 	}
 }

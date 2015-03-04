@@ -51,14 +51,17 @@ public class TouchManager : MonoBehaviour {
 
 			Note nota = obj.GetComponent<Note>();
 
-			int note = 65;//nota.note;
-			int vol = 200;//nota.volume;
-			int inst = 10;//nota.instrument;
-			float duration = 1;//nota.duration;
+			if(nota != null){
+				int note = nota.note;
+				int vol = nota.volume;
+				int inst = nota.instrument;
+				float duration = nota.duration;
 
-			StartCoroutine(PlayNote(note, vol, inst, duration));
+				StartCoroutine(PlayNote(note, vol, inst, duration));
 
-			Destroy (obj);
+				Destroy (obj);
+			}
+
 		}
 	}
 
