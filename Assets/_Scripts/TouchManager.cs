@@ -44,11 +44,14 @@ public class TouchManager : MonoBehaviour {
 		if (hit.collider != null) {
 			//TODO comportamiento de audio
 			GameObject obj = hit.collider.gameObject;
-			if(obj.tag.Equals("Good"))
+			if(obj.tag.Equals("Good")){
 				puntaje.IncreaseScore();
-			else if(obj.tag.Equals("Bad"))
+				salud.Recover();
+			}
+			else if(obj.tag.Equals("Bad")){
 				puntaje.LoseStreak();
-
+				salud.Damage();
+			}
 			Note nota = obj.GetComponent<Note>();
 
 			if(nota != null){
