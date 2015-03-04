@@ -52,6 +52,7 @@
      <Compile Include="Assets\_Scripts\Cleaner.cs" />
      <Compile Include="Assets\_Scripts\HealthManager.cs" />
      <Compile Include="Assets\_Scripts\Move.cs" />
+     <Compile Include="Assets\_Scripts\Note.cs" />
      <Compile Include="Assets\_Scripts\NotesManager.cs" />
      <Compile Include="Assets\_Scripts\ScoreManager.cs" />
      <Compile Include="Assets\_Scripts\TouchManager.cs" />

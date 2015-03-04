@@ -1,43 +1,60 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using CSharpSynth.Effects;
+using CSharpSynth.Sequencer;
+using CSharpSynth.Synthesis;
+using CSharpSynth.Midi;
 
+[RequireComponent (typeof(AudioSource))]
 public class NotesManager : MonoBehaviour {
 
-	public static float DoDistance = 6f;
-	public static int maxLine=13;
+	public static float DoDistance = 6f;			// La distancia a la linea correspondiente a "Do" en clave de sol.
+	public static int maxLine=13;					// La maxima cantidad de lineas permitidas en el pentagrama.
 
-	public GameObject good;
-	public GameObject bad;
+	public GameObject good;							// Prefab correspondiente a una nota correcta.
+	public GameObject bad;							// Prefab correspondiente a una mala nota.
 
-	public float spawnTime = 2f;            // How long between each spawn.
-	public float chordTime = 5f;
-	public float badNoteProb = 0.20f;
-	public float upperNoteProb = 0.30f;
+	public float spawnTime = 2f;            		// How long between each spawn.
+	public float chordTime = 5f;					// Cada cuanto se cambia de acorde.
+	public float badNoteProb = 0.20f;				// La probabilidad de una nota fuera del acorde.
+	public float upperNoteProb = 0.30f;				// La probabilidad de una nota en la siguiente octava.
 
-	public HealthManager salud;				//Vida del jugador
-	public Text Chord;						//Acorde que se esta generando actualmente
-	public Text Scale;						//Escala que se esta utilizando para generar acordes.
+	public HealthManager salud;						// Vida del jugador
+	public Text Chord;								// Acorde que se esta generando actualmente
+	public Text Scale;								// Escala que se esta utilizando para generar acordes.
 	
-	private Animator progresion;			// Maquina de estados que colabora en la generacion de progresiones.
-	private int[] notesInChord; 
-		
+	private StreamSynthesizer midiStreamSynthesizer;// Permite sintetizar el MIDI.
+	private float[] sampleBuffer;
+	private float gain = 1f;
+	public string bankFilePath = "GM Bank/gm";
+	public int bufferSize = 1024;
+
+	private Animator progresion;					// Maquina de estados que colabora en la generacion de progresiones.
+	private int[] notesInChord; 					// Arreglo con las notas que pertenecen al acorde.
+			
 	void Start (){
+
+
 		progresion = GetComponent<Animator> ();
 
-		Scale.text="CM";//TODO seleccion y generacion arbitraria de escalas
+		Scale.text="CM";
+		//TODO seleccion y generacion arbitraria de escalas
 
-		// Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.
+		// Llama a las funciones de Spawn y Cambio de acorde cada tiempo.
 		InvokeRepeating ("Spawn", spawnTime, spawnTime);
 		InvokeRepeating ("ChangeChord", 0, chordTime);
-
 	}
 
-	void Update(){
-		//TODO construir logica de generacion
+	void InicilizarSintetizador(){
+		midiStreamSynthesizer = new StreamSynthesizer (44100, 2, bufferSize, 40);
+		sampleBuffer = new float[midiStreamSynthesizer.BufferSize];		
+		
+		midiStreamSynthesizer.LoadBank (bankFilePath);
 	}
 
 	void ChangeChord(){
+		// Se retira en estado actual dde la maquina.
 		AnimatorStateInfo actual = progresion.GetCurrentAnimatorStateInfo (0);
 
 		int top = 3;
@@ -51,6 +68,7 @@ public class NotesManager : MonoBehaviour {
 		else
 			tr = Random.Range (1, top);
 
+		// Activa la transicion.
 		progresion.SetInteger ("ChordSel", tr);
 		progresion.SetTrigger ("Transition");
 
@@ -93,7 +111,7 @@ public class NotesManager : MonoBehaviour {
 		if (prob < upperNoteProb) 
 			pos.y += 7f;
 
-		Instantiate (target, pos, Quaternion.identity);
+		GameObject note = Instantiate (target, pos, Quaternion.identity) as GameObject;
 		//TODO asignar la nota
 	}
 }
