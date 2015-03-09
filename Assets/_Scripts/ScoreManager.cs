@@ -26,7 +26,7 @@ public class ScoreManager : MonoBehaviour {
 		}
 	}
 
-	private int scoreValue{
+	public int scoreValue{
 		get{
 			return _scoreValue;
 		}
