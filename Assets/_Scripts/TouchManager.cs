@@ -17,7 +17,7 @@ public class TouchManager : MonoBehaviour {
 	public string bankFilePath = "GM Bank/gm";
 	public int bufferSize = 1024;
 
-	void Start(){
+	void Awake(){
 		salud = GetComponent<HealthManager>();
 		puntaje = GetComponent<ScoreManager>();
 		InicilizarSintetizador ();
