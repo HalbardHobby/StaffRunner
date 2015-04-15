@@ -88,6 +88,7 @@ public class HealthManager : MonoBehaviour {
 		else
 		{
 			fin.text = "HighScores: "+ hs_get.text; // this is a GUIText that will display the scores in game.
+
 		}
 	}
 

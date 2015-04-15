@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\HealthManager.cs">
+    <Files>
+      <File FileName="staffRunner.sln" Line="59" Column="1" />
+      <File FileName="Assets\_Scripts\HealthManager.cs" Line="77" Column="3" />
+      <File FileName="Assets\_Scripts\TouchManager.cs" Line="91" Column="1" />
+      <File FileName="Assets\_Scripts\notesManager.cs" Line="102" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
