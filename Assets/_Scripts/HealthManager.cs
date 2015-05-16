@@ -12,11 +12,6 @@ public class HealthManager : MonoBehaviour {
 	public RectTransform main;
 	public NotesManager spawn;
 
-	
-	private string secretKey = "sr_key"; // Edit this value and make sure it's the same as the one stored on the server
-	public string addScoreURL = "http://104.131.163.157/addscore.php?"; //be sure to add a ? to your url
-	public string highscoreURL = "http://104.131.163.157/display.php";
-	
 	private float health{
 		get{
 			return salud.value;
@@ -48,9 +43,17 @@ public class HealthManager : MonoBehaviour {
 		Text fin = rect.FindChild("FinalScore").GetComponent<Text>();
 		ScoreManager score = GetComponent<ScoreManager> ();
 		fin.text = "Loading Scores";
+#if UNITY_ANDROID
 		StartCoroutine (PostScores("User",score.scoreValue));
 		StartCoroutine (GetScores());
+#endif
 	}
+
+	//codigo de manejo online.
+#if UNITY_ANDROID
+	private string secretKey = "sr_key"; // Edit this value and make sure it's the same as the one stored on the server
+	public string addScoreURL = "http://104.131.163.157/addscore.php?"; //be sure to add a ? to your url
+	public string highscoreURL = "http://104.131.163.157/display.php";
 
 	IEnumerator PostScores(string name, int score)
 	{
@@ -93,10 +96,6 @@ public class HealthManager : MonoBehaviour {
 	}
 
 
-
-
-
-
 	public  string Md5Sum(string strToEncrypt)
 	{
 		System.Text.UTF8Encoding ue = new System.Text.UTF8Encoding();
@@ -116,4 +115,5 @@ public class HealthManager : MonoBehaviour {
 		
 		return hashString.PadLeft(32, '0');
 	}
+#endif
 }

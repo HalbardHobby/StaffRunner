@@ -6,6 +6,8 @@ public class Cleaner : MonoBehaviour {
 
 	private BoxCollider2D collide;
 
+	public HealthManager health;
+
 	// Use this for initialization
 	void Awake() {
 		collide = GetComponent<BoxCollider2D> ();
@@ -13,7 +15,7 @@ public class Cleaner : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (collide.gameObject.CompareTag ("Good")) {
-			//TODO penalizacion del jugador
+			health.Damage();
 		}
 		Destroy (other.gameObject);
 	}
