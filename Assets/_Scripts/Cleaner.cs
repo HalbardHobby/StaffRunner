@@ -14,7 +14,9 @@ public class Cleaner : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if (collide.gameObject.CompareTag ("Good")) {
+		Debug.Log (other.gameObject.tag);
+		if (other.gameObject.CompareTag ("Good")) {
+			Debug.Log("Danho");
 			health.Damage();
 		}
 		Destroy (other.gameObject);
