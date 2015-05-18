@@ -35,5 +35,22 @@ public class MicrophoneDetector : MonoBehaviour {
 		return amplitude / 1024;
 	}
 
+	float GetPrincipalFrecuency(){
+		float freq = 0.0f;
+		float[] data = new float[8192];
+		// se hace fourier para poder encontrar las frecuencias
+		audio.GetSpectrumData (data, 0, FFTWindow.BlackmanHarris);
 
+		float max = 0f;
+		int i = 0;
+		// se busca el armonico mas alto
+		for (int j=0; j<data.Length; j++)
+			if (data [j] > max){
+				i = j;
+				max = data[j];
+		}
+
+		freq = i * AudioSettings.outputSampleRate / 8192;
+		return freq;
+	}
 }
