@@ -8,18 +8,19 @@ public class MicrophoneDetector : MonoBehaviour {
 
 	public float threshold = 0.15f;
 	public int sampleSize = 8192;
+	public int sampleRate = 20000;
 
 	// Use this for initialization
 	void Start () {
 		// Anhade un audio source para almacenar la entrada
 		audio = gameObject.GetComponent<AudioSource>();
 		// Inicia la grabacion de audio en el dispositivo por defecto
-		audio.clip = Microphone.Start (null, true, 1, AudioSettings.outputSampleRate);
+		audio.clip = Microphone.Start (null, true, 1, sampleRate);
 		audio.loop = true;
 		// Evita reproduccion hasta que haya samples suficientes
 		while (!(Microphone.GetPosition(null)>0));
 
-		Debug.Log (AudioSettings.outputSampleRate);
+		Debug.Log (sampleRate);
 		audio.Play ();
 	}
 	
@@ -49,13 +50,13 @@ public class MicrophoneDetector : MonoBehaviour {
 		float max = 0f;
 		int i = 0;
 		// se busca el armonico mas alto
-		for (int j=0; j<data.Length; j++)
+		for (int j=0; j<data.Length/2; j++)
 			if (data [j] > max){
 				i = j;
 				max = data[j];
 		}
 
-		freq = i * AudioSettings.outputSampleRate / (float)sampleSize;
+		freq = i * sampleRate / ((float)sampleSize*(sampleRate* 0.0000843f));
 		return freq;
 	}
 }
