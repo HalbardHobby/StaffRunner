@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 17bceefcab5c98d49b43a1cd5fc0dd63
+timeCreated: 1432047438
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Flame_0
@@ -116,6 +118,9 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
@@ -126,6 +131,7 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
@@ -146,8 +152,8 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_1
       rect:
@@ -156,8 +162,8 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_2
       rect:
@@ -166,8 +172,8 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_3
       rect:
@@ -176,7 +182,7 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_4
@@ -186,7 +192,7 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_5
@@ -196,7 +202,7 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_6
@@ -206,7 +212,7 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_7
@@ -216,7 +222,7 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_8
@@ -226,7 +232,7 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_9
@@ -236,7 +242,7 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_10
@@ -246,7 +252,7 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_11
@@ -256,7 +262,7 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_12
@@ -266,7 +272,7 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_13
@@ -276,7 +282,7 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_14
@@ -286,7 +292,7 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_15
@@ -296,7 +302,7 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_16
@@ -306,7 +312,7 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_17
@@ -316,7 +322,7 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_18
@@ -326,7 +332,7 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_19
@@ -336,7 +342,7 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_20
@@ -346,7 +352,7 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_21
@@ -356,7 +362,7 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_22
@@ -366,7 +372,7 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_23
@@ -376,7 +382,7 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_24
@@ -386,7 +392,7 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_25
@@ -396,7 +402,7 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_26
@@ -406,7 +412,7 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_27
@@ -416,7 +422,7 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_28
@@ -426,7 +432,7 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_29
@@ -436,7 +442,7 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_30
@@ -446,7 +452,7 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_31
@@ -456,7 +462,7 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_32
@@ -466,7 +472,7 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_33
@@ -476,7 +482,7 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_34
@@ -486,7 +492,7 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_35
@@ -496,7 +502,7 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_36
@@ -506,7 +512,7 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_37
@@ -516,7 +522,7 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_38
@@ -526,7 +532,7 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_39
@@ -536,7 +542,7 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_40
@@ -546,7 +552,7 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_41
@@ -556,7 +562,7 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_42
@@ -566,7 +572,7 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_43
@@ -576,7 +582,7 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_44
@@ -586,7 +592,7 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_45
@@ -596,7 +602,7 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_46
@@ -606,7 +612,7 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_47
@@ -616,7 +622,7 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_48
@@ -626,7 +632,7 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_49
@@ -636,7 +642,7 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_50
@@ -646,7 +652,7 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_51
@@ -656,7 +662,7 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_52
@@ -666,7 +672,7 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_53
@@ -676,7 +682,7 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_54
@@ -686,7 +692,7 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_55
@@ -696,7 +702,7 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_56
@@ -706,7 +712,7 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_57
@@ -716,7 +722,7 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_58
@@ -726,7 +732,7 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_59
@@ -736,7 +742,7 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_60
@@ -746,7 +752,7 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_61
@@ -756,7 +762,7 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_62
@@ -766,7 +772,7 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_63
@@ -776,7 +782,7 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_64
@@ -786,7 +792,7 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_65
@@ -796,7 +802,7 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_66
@@ -806,7 +812,7 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_67
@@ -816,7 +822,7 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_68
@@ -826,7 +832,7 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_69
@@ -836,7 +842,7 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_70
@@ -846,7 +852,7 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_71
@@ -856,7 +862,7 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_72
@@ -866,7 +872,7 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_73
@@ -876,7 +882,7 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_74
@@ -886,7 +892,7 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_75
@@ -896,7 +902,7 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_76
@@ -906,7 +912,7 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_77
@@ -916,7 +922,7 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_78
@@ -926,7 +932,7 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_79
@@ -936,7 +942,7 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_80
@@ -946,7 +952,7 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_81
@@ -956,7 +962,7 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_82
@@ -966,7 +972,7 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_83
@@ -976,7 +982,7 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_84
@@ -986,7 +992,7 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_85
@@ -996,7 +1002,7 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_86
@@ -1006,7 +1012,7 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_87
@@ -1016,7 +1022,7 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_88
@@ -1026,7 +1032,7 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_89
@@ -1036,7 +1042,7 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_90
@@ -1046,7 +1052,7 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_91
@@ -1056,7 +1062,7 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_92
@@ -1066,7 +1072,7 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_93
@@ -1076,7 +1082,7 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_94
@@ -1086,7 +1092,7 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Flame_95
@@ -1096,8 +1102,10 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

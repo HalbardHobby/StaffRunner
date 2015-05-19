@@ -10,7 +10,7 @@ public class ShakeDetector : MonoBehaviour {
 	float timer = 0.0f;
 	float lastMag = 0.0f;
 
-	bool Shaking(){
+	public bool Shaking(){
 		Vector3 curAcc = Input.acceleration; // tomar la aceleracion actual
 
 		// verificar si se pasa el threshold
@@ -29,11 +29,5 @@ public class ShakeDetector : MonoBehaviour {
 			timer += Time.deltaTime;
 		}
 		return false;
-	}
-
-	void Update(){
-		if (Shaking ()) {
-			Debug.Log (Input.acceleration.magnitude);
-		}
 	}
 }

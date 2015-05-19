@@ -7,7 +7,6 @@ public class Cleaner : MonoBehaviour {
 	public HealthManager health;
 
 	void OnTriggerEnter2D(Collider2D other){
-		Debug.Log (other.gameObject.tag);
 		if (other.gameObject.CompareTag ("Good")) {
 			health.Damage();
 		}
