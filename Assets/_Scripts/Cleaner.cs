@@ -5,11 +5,12 @@ using System.Collections;
 public class Cleaner : MonoBehaviour {
 
 	public HealthManager health;
+	public ScoreManager score;
 
 	void OnTriggerEnter2D(Collider2D other){
-		Debug.Log (other.gameObject.tag);
 		if (other.gameObject.CompareTag ("Good")) {
 			health.Damage();
+			score.LoseStreak();
 		}
 		Destroy (other.gameObject);
 	}
