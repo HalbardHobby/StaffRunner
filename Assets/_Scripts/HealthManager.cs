@@ -7,6 +7,8 @@ public class HealthManager : MonoBehaviour {
 	public Slider salud;
 	public float damage = 10f;
 	public float recover = 7.5f;
+	public float heroPower= 0f;
+	public bool heroPowerActivated = false;
 
 	public RectTransform GameOverScreen;
 	public RectTransform main;
@@ -26,13 +28,33 @@ public class HealthManager : MonoBehaviour {
 	}
 
 	public void Damage(){
-		health -= damage;
-		if (health <= 0)
-			GameOver ();
+
+		if (!heroPowerActivated) {
+			health -= damage;
+			if (health <= 0)
+				GameOver ();
+		}
+		else {
+			heroPower--;
+			if(heroPower<=0f){
+				heroPowerActivated=false;
+			}
+		}
 	}
 
 	public void Recover(){
 		health += recover;
+	}
+
+	public void HeroPowerIncrease(){
+		if(heroPower<5)
+			heroPower++;	
+	}
+
+	
+	public void HeroPowerActivate(){
+		if(heroPower==5)
+			heroPowerActivated=true;	
 	}
 
 	public void GameOver(){

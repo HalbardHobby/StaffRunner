@@ -14,6 +14,14 @@ public class ScoreManager : MonoBehaviour {
 	private int multiplier;
 	private int _streak;
 
+
+	private HealthManager salud;
+
+	
+	void Awake(){
+		salud = GetComponent<HealthManager>();
+	}
+
 	private int streak{
 		get {
 			return _streak;
@@ -48,6 +56,11 @@ public class ScoreManager : MonoBehaviour {
 	public void IncreaseScore(){
 		scoreValue += stdScore * multiplier;
 		streak += 1;
+
+		if(streak%5==0){
+			salud.HeroPowerIncrease();
+		}
+
 		Debug.Log (streak);
 	}
 }
