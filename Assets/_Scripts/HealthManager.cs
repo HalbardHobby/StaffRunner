@@ -70,8 +70,12 @@ public class HealthManager : MonoBehaviour {
 	}
 
 	public void GameOver(){
-		spawn.CancelInvoke ("Spawn");
-		spawn.CancelInvoke ("ChangeChord");
+		try{
+			spawn.CancelInvoke ("Spawn");
+			spawn.CancelInvoke ("ChangeChord");
+		}
+		catch{
+		}
 		RectTransform rect = Instantiate (GameOverScreen) as RectTransform;
 		rect.SetParent (main, false);
 		Text fin = rect.FindChild("FinalScore").GetComponent<Text>();
