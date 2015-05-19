@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-
 public class HealthManager : MonoBehaviour {
 
 	public Slider salud;
@@ -14,6 +13,9 @@ public class HealthManager : MonoBehaviour {
 	public RectTransform main;
 	public NotesManager spawn;
 
+	public Slider sl;
+	public Slider slHealth;
+
 	private float health{
 		get{
 			return salud.value;
@@ -25,6 +27,8 @@ public class HealthManager : MonoBehaviour {
 	
 	void Start(){
 		health = 50f;
+		sl = GameObject.Find ("Slider_HeroPower").GetComponent<Slider> ();
+		slHealth = GameObject.Find ("Slider").GetComponent<Slider> ();
 	}
 
 	public void Damage(){
@@ -35,9 +39,12 @@ public class HealthManager : MonoBehaviour {
 				GameOver ();
 		}
 		else {
-			heroPower--;
+			heroPower--;		
+			sl.value=heroPower;
 			if(heroPower<=0f){
 				heroPowerActivated=false;
+				Image[] images = slHealth.GetComponentsInChildren<Image>();
+				images[1].color=Color.red;
 			}
 		}
 	}
@@ -47,14 +54,19 @@ public class HealthManager : MonoBehaviour {
 	}
 
 	public void HeroPowerIncrease(){
-		if(heroPower<5)
-			heroPower++;	
+		if (heroPower < 5 && !heroPowerActivated) {
+			heroPower++;
+			sl.value=heroPower;
+		}
 	}
 
 	
 	public void HeroPowerActivate(){
-		if(heroPower==5)
-			heroPowerActivated=true;	
+		if (heroPower == 5) {
+			heroPowerActivated = true;
+			Image[] images = slHealth.GetComponentsInChildren<Image>();
+			images[1].color=Color.blue;
+		}
 	}
 
 	public void GameOver(){
