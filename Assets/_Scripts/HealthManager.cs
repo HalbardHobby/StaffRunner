@@ -25,6 +25,7 @@ public class HealthManager : MonoBehaviour {
 	}
 	
 	void Start(){
+		sl=GameObject.Find("Slider_HeroPower").GetComponent<Slider>();
 		health = 50f;
 	}
 
