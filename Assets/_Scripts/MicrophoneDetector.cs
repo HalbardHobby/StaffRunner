@@ -30,8 +30,8 @@ public class MicrophoneDetector : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (getAverageVolume() >= threshold)
-			Debug.Log (FrequencyToMidi(GetPrincipalFrecuency())%12);
+		//if (getAverageVolume() >= threshold)
+			//Debug.Log (FrequencyToMidi(GetPrincipalFrecuency())%12);
 	}
 
 	float getAverageVolume(){
@@ -45,8 +45,12 @@ public class MicrophoneDetector : MonoBehaviour {
 		return amplitude / sampleSize;
 	}
 
+	public bool passThreshold(){
+		return getAverageVolume () > threshold;
+	}
+
 	//funcion que calcula la frecuencia predominante
-	float GetPrincipalFrecuency(){
+	public float GetPrincipalFrecuency(){
 		float freq = 0.0f;
 		float[] data = new float[sampleSize];
 		// se hace fourier para poder encontrar las frecuencias
@@ -66,12 +70,12 @@ public class MicrophoneDetector : MonoBehaviour {
 	}
 
 	//funcion que retorna una frecuencia dado un valor midi
-	float MidiToFrequency(int midi){
+	public float MidiToFrequency(int midi){
 		return Mathf.Pow (EXPONENTIAL, midi) * BASE_FREQUENCY;
 	}
 	
 	//funcion que retorna un numeral midi dada una frecuencia
-	int FrequencyToMidi(float freq){
+	public int FrequencyToMidi(float freq){
 		float temp = Mathf.Log ( freq/BASE_FREQUENCY,EXPONENTIAL );
 		float fl_dist = Mathf.Abs (Mathf.Floor (temp) - temp);
 		float cl_dist = Mathf.Abs (Mathf.Ceil (temp) - temp);
