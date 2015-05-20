@@ -58,7 +58,7 @@ public class RhythmScore : MonoBehaviour {
 			for( int i =0; i < zones.Length; i++ )
 				if(zones[i]){
 					IncreaseScore();
-					
+					Destroy(current);
 					return;
 				}
 			LoseStreak();

@@ -14,7 +14,6 @@ public class HealthManager : MonoBehaviour {
 	public NotesManager spawn;
 
 	public Slider sl;
-	public Slider slHealth;
 
 	private float health{
 		get{
@@ -27,8 +26,6 @@ public class HealthManager : MonoBehaviour {
 	
 	void Start(){
 		health = 50f;
-		sl = GameObject.Find ("Slider_HeroPower").GetComponent<Slider> ();
-		slHealth = GameObject.Find ("Slider").GetComponent<Slider> ();
 	}
 
 	public void Damage(){
@@ -43,7 +40,7 @@ public class HealthManager : MonoBehaviour {
 			sl.value=heroPower;
 			if(heroPower<=0f){
 				heroPowerActivated=false;
-				Image[] images = slHealth.GetComponentsInChildren<Image>();
+				Image[] images = salud.GetComponentsInChildren<Image>();
 				images[1].color=Color.red;
 			}
 		}
@@ -64,7 +61,7 @@ public class HealthManager : MonoBehaviour {
 	public void HeroPowerActivate(){
 		if (heroPower == 5) {
 			heroPowerActivated = true;
-			Image[] images = slHealth.GetComponentsInChildren<Image>();
+			Image[] images = salud.GetComponentsInChildren<Image>();
 			images[1].color=Color.blue;
 		}
 	}

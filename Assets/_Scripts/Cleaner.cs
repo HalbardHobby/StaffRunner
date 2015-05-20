@@ -2,6 +2,7 @@
 using System.Collections;
 
 //Este objeto se encargara de detectar los objetos salidos del campo de juego y procesarlos debidamente
+[RequireComponent(typeof(BoxCollider2D))]
 public class Cleaner : MonoBehaviour {
 
 	public HealthManager health;
